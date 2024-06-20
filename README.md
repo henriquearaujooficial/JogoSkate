@@ -8,4 +8,4 @@ Desenvolvemos um Jogo de Skate utilizando HTML5, CSS, JavaScript. Na Uniceplac. 
 - CSS
 - JavaScript
 
-![Portfólio](https://github.com/henriquearaujooficial/Agendamento-Front/blob/main/github/Front.png)
+![Portfólio](https://github.com/henriquearaujooficial/JogoSkate/blob/main/telaprincipaljogoskate.png)
