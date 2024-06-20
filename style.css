@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(3, 56, 71);
+}
+
+.jogo {
+    width: 100%;
+    height: 500px;
+    border-bottom: 30px solid rgb(35, 33, 31);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: rgb(29, 157, 215);
+}
+
+.nuvens{
+    width: 250px;
+    position: absolute;
+    animation: nunvesAnimada 30s infinite linear;
+}
+
+@keyframes nunvesAnimada{
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.cone {
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    animation: coneAnimado 1.6s infinite linear;
+}
+
+@keyframes coneAnimado {
+    from {
+        right: -90px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.skatista {
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.pulo{
+    animation: pulo 500ms ease-out;
+}
+
+@keyframes pulo {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 160px;
+    }
+
+    50% {
+        bottom: 160px;
+    }
+
+    60% {
+        bottom: 160px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+#contador {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(8, 8, 8);
+}
+
+#mensagem-perda {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Inicialmente oculto */
+    color: #040404;
+    font-size: 34px;
+    font-weight: bold;
+}
